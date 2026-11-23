@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.titulo {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+span {
+  color: #266bff;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.sudtitulo {
+  text-align: center;
+}
+
+.galeria {
+  text-align: center;
+}
+
+/* Seleccionamos la lista del menú */
+.menu ul {
+    display: flex;          /* Los coloca uno al lado del otro */
+    gap: 30px;              /* Separa cada enlace 30 píxeles entre sí */
+    list-style: none;       /* Quita los puntos de la lista */
+    justify-content: center;/* Centra el menú en la pantalla */
+    padding: 0;             /* Limpia el margen interno por defecto */
+}
+
+/* Estilo para los enlaces individuales */
+.menu a {
+    text-decoration: none;  /* Quita la línea fea de los enlaces */
+    color: white;            /* Cambia el color del texto a un gris oscuro elegante */
+    font-weight: bold;      /* Pone el texto en negrita */
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: #266bff;
+}
+
+.navfinal{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.bg {
+  width: 100%;
+  height: auto;
+}
+
+.grid {
+  flex-wrap: wrap;
+}
+
+.article {
+  border: 1px solid #ccc;
+}
+
+/* 1. Convierte la tarjeta completa en una fila (imagen izq, texto der) */
+.grid-productos {
+    display: flex;
+    border: 1px solid #ccc; /* El borde s alrededor de la tarjeta */
+    border-radius: 8px;
+    overflow: hidden;       /* Para que las esquinas redondeadas recorten bien el contenido */
+    max-width: 900px;       /* Un ancho máximo para que no se estire de más en pantallas grandes */
+    margin: 40px auto;      /* Centra la tarjeta en la página */
+}
+
+/* 2. El bloque de la imagen ocupa la mitad izquierda */
+.producto-imagen {
+    width: 100%;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que la foto se deforme */
+    display: block;
+}
+
+/* 3. El bloque de información ocupa la mitad derecha, con fondo azul y texto blanco */
+.producto-info {
+    width: 50%;
+    background-color: #0077cc; /* El tono azul de tu maqueta */
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* 4. Estilo para el botón verde de agregar al carrito */
+.producto-info .agregar-carrito {
+    background-color: #88cc00; /* El verde brillante de tu diseño */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.5s ease;
+    transition-behavior: normal;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: background-color;
+    cursor: pointer;
+}
+.agregar-carrito:hover {
+    background: #00690e;
+}
+
+.producto-info span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white; /* Asegura que el precio se vea blanco sobre el fondo azul */
+}
+
+/* 1. Limita el ancho de la sección de productos general para que no se expanda de más */
+main {
+    max-width: 1100px;  /* Controla el ancho máximo de toda la sección central */
+    margin: 0 auto;     /* Centra todo en la pantalla */
+    padding: 20px;
+}
+
+/* 2. Para la fila de dos columnas (Productos 2 y 3) */
+.fila-productos-2 {
+    display: flex;
+    justify-content: center; /* Los centra en lugar de estirarlos con space-between */
+    gap: 30px;               /* Espacio controlado entre ellos */
+    margin-bottom: 30px;
+}
+
+/* 3. Dale un ancho fijo o máximo a cada tarjeta vertical */
+.tarjeta-vertical {
+    display: flex;
+    flex-direction: column;
+    width: 45%;          /* Ocupan casi la mitad pero con un límite ordenado */
+    max-width: 500px;    /* Evita que crezcan demasiado en pantallas grandes */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* El bloque azul inferior de la tarjeta vertical */
+.producto-info-vertical {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 1. Controla el alto de la imagen en las tarjetas verticales */
+.tarjeta-vertical img {
+    width: 100%;
+    height: 220px;       /* Un alto fijo para todas las fotos verticales */
+    object-fit: cover;   /* Evita que la foto se distorsione */
+    display: block;
+}
+
+/* 2. Asegura que el bloque azul inferior tenga espacio interno y ordene bien sus elementos */
+.producto-info-vertical {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;        /* Hace que el cuadro azul llene el espacio restante de manera uniforme */
+}
+
+/* 3. Asegura que el precio y el botón se distingan bien dentro del cuadro azul */
+.producto-info-vertical span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+}
+
+.producto-info-vertical .agregar-carrito {
+    background-color: #88cc00; /* El verde brillante */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+    transition-behavior: normal;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: background-color;
+    cursor: pointer;
+}
+.agregar-carrito:hover {
+    background: #00690e;
+}
+
+.oficina, .hogar, .cocina {
+    display: flex;
+    flex-direction: column; /* Imagen arriba, título abajo */
+    align-items: center;    /* Centra el contenido */
+}
+
+/* 1. Pone las tres tarjetas juntas en una sola fila horizontal */
+.grid-categorias {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* 2. Hace que cada tarjeta individual apile su imagen arriba y su texto abajo */
+.grid-categorias > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32%; /* Reparte el ancho equitativamente entre las 3 */
+}
+
+/* Controla el ancho, alto fijo y evita que la imagen se deforme */
+.grid-categorias img {
+    width: 90%;       /* Ocupa todo el ancho de su columna */
+    height: 400px;     /* Ajusta aquí el alto fijo que prefieras en píxeles */
+    object-fit: cover; /* Recorta la imagen sutilmente para que no pierda su proporción */
+    border-radius: 20px; /* Opcional: mantiene las esquinas redondeadas estéticas */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 8px; /* Separa un poquito cada enlace hacia abajo */
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #e6e5e7; /* Un fondo sutil opcional para separar el footer */
+}
+
+.footer-final {
+  text-align: center;
+}

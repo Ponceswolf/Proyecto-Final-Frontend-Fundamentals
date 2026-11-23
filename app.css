@@ -1,7 +1,77 @@
 /*reglas generales*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.menu container {
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: center;
+}
+
+.navbar {
+    display: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: center;
+}
+
+.Productos-col1 {
+    padding: 0 100px;
+    background-color: red;
+    border: dotted 1px #ccc;
+}
 /*Media Query*/
 
 /** Reescribir colores */
 
 /** Productos */
+
+.muebles {
+    color: #266bff;
+}
+.footer {
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.link a {
+    color: #000;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.final {
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.final h6{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
